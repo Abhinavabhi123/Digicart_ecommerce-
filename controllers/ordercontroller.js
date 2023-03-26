@@ -106,6 +106,7 @@ const downSalesReport = async(req,res)=>{
       const filePathName = path.resolve(__dirname,'../views/admin/salesreport.ejs')
       const htmlString =  fs.readFileSync(filePathName).toString();
       let option = {
+        phantomPath: './node_modules/phantomjs-prebuilt/bin/phantomjs',
         format:'A4',
         border:'10mm'
       }
