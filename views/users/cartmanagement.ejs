@@ -140,7 +140,7 @@
         document.getElementById('totalprice').innerHTML = response.total;
         var stock  =response.productStock.stock;
         console.log(stock);
-        document.getElementById('stock'+proid).innerText=stock
+        document.getElementById('stock'+proid).innerText=stock  
         // document.getElementById(proid).innerText = parseInt(document.getElementById(proid).innerText)+count;
         const data =  parseInt(document.getElementById(proid).innerText)+count;
         document.getElementById(proid).innerText =data;

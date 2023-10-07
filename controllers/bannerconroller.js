@@ -5,7 +5,7 @@ const getBanner = async(req,res)=>{
       
         const bannerDatas = await Banner.find()
       
-        res.render("admin/bannerManagement",{bannerDatas})
+        res.render("admin/bannermanagement",{bannerDatas})
       
      
     } catch (error) {
